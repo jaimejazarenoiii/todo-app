@@ -26,7 +26,6 @@
 		E177C90827E363F700F35243 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E177C90727E363F700F35243 /* RxSwift */; };
 		E177C90B27E3659C00F35243 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C90A27E3659C00F35243 /* User.swift */; };
 		E177C90D27E365A200F35243 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C90C27E365A200F35243 /* Task.swift */; };
-		E177C91027E365B200F35243 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C90F27E365B200F35243 /* Category.swift */; };
 		E177C91627E372F600F35243 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C91527E372F600F35243 /* Store.swift */; };
 		E177C91827E374D300F35243 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C91727E374D300F35243 /* AppState.swift */; };
 		E177C91F27E3755C00F35243 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C91E27E3755C00F35243 /* AuthState.swift */; };
@@ -36,8 +35,6 @@
 		E177C92827E37D1A00F35243 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C92727E37D1A00F35243 /* World.swift */; };
 		E177C92A27E39D1100F35243 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C92927E39D1100F35243 /* AppReducer.swift */; };
 		E177C92C27E3AF9700F35243 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C92B27E3AF9700F35243 /* AuthService.swift */; };
-		E177C92E27E3B5FC00F35243 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = E177C92D27E3B5FC00F35243 /* users.json */; };
-		E177C93027E3B7C900F35243 /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = E177C92F27E3B7C900F35243 /* tasks.json */; };
 		E177C93327E3B81C00F35243 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C93227E3B81C00F35243 /* HomeViewController.swift */; };
 		E1DA6B9D27E442700051CC79 /* TodoTaskState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6B9C27E442700051CC79 /* TodoTaskState.swift */; };
 		E1DA6B9F27E442780051CC79 /* TodoTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6B9E27E442780051CC79 /* TodoTaskAction.swift */; };
@@ -45,11 +42,24 @@
 		E1DA6BA327E4430F0051CC79 /* TodoTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BA227E4430F0051CC79 /* TodoTaskService.swift */; };
 		E1DA6BA527E443180051CC79 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BA427E443180051CC79 /* FileLoader.swift */; };
 		E1DA6BA827E44C150051CC79 /* TodoTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BA727E44C150051CC79 /* TodoTaskTableViewCell.swift */; };
-		E1DA6BAA27E46D2F0051CC79 /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BA927E46D2F0051CC79 /* NeumorphicView.swift */; };
 		E1DA6BAC27E472B40051CC79 /* WelcomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BAB27E472B40051CC79 /* WelcomeHeaderView.swift */; };
 		E1DA6BAF27E485A90051CC79 /* TaskFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BAE27E485A90051CC79 /* TaskFormViewController.swift */; };
 		E1DA6BB227E487640051CC79 /* MutateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BB127E487640051CC79 /* MutateAction.swift */; };
 		E1DA6BB427E4A32F0051CC79 /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BB327E4A32F0051CC79 /* FormState.swift */; };
+		E1DA6BB627E4AC340051CC79 /* ApplicationCoordinator+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BB527E4AC340051CC79 /* ApplicationCoordinator+Navigation.swift */; };
+		E1DA6BB827E4AC630051CC79 /* ApplicationCoordinator+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BB727E4AC630051CC79 /* ApplicationCoordinator+Onboarding.swift */; };
+		E1DA6BBA27E4AE0A0051CC79 /* ApplicationCoordinator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BB927E4AE0A0051CC79 /* ApplicationCoordinator+Home.swift */; };
+		E1DA6BBC27E4AE300051CC79 /* ApplicationCoordinator+TaskForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BBB27E4AE300051CC79 /* ApplicationCoordinator+TaskForm.swift */; };
+		E1DA6BC127E4AEA70051CC79 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BC027E4AEA70051CC79 /* Color+Extension.swift */; };
+		E1DA6BC327E4AED80051CC79 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BC227E4AED80051CC79 /* Status.swift */; };
+		E1DA6BC627E4AF720051CC79 /* SigninViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BC527E4AF720051CC79 /* SigninViewController+Scene.swift */; };
+		E1DA6BC827E4AF9C0051CC79 /* SignupViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BC727E4AF9C0051CC79 /* SignupViewController+Scene.swift */; };
+		E1DA6BCA27E4B0000051CC79 /* OnboardingViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BC927E4B0000051CC79 /* OnboardingViewController+Scene.swift */; };
+		E1DA6BCC27E4B0620051CC79 /* HomeViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BCB27E4B0620051CC79 /* HomeViewController+Scene.swift */; };
+		E1DA6BCE27E4B0BF0051CC79 /* TaskFormViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BCD27E4B0BF0051CC79 /* TaskFormViewController+Scene.swift */; };
+		E1DA6BD027E4B3210051CC79 /* TodoTaskServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BCF27E4B3210051CC79 /* TodoTaskServiceable.swift */; };
+		E1DA6BD227E4B3880051CC79 /* AuthServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BD127E4B3880051CC79 /* AuthServiceable.swift */; };
+		E1DA6BD427E4B3B70051CC79 /* Saveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA6BD327E4B3B70051CC79 /* Saveable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +98,6 @@
 		E177C8FA27E3432A00F35243 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E177C90A27E3659C00F35243 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E177C90C27E365A200F35243 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		E177C90F27E365B200F35243 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E177C91527E372F600F35243 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		E177C91727E374D300F35243 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E177C91E27E3755C00F35243 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
@@ -98,8 +107,6 @@
 		E177C92727E37D1A00F35243 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		E177C92927E39D1100F35243 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		E177C92B27E3AF9700F35243 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		E177C92D27E3B5FC00F35243 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
-		E177C92F27E3B7C900F35243 /* tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		E177C93227E3B81C00F35243 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E1DA6B9C27E442700051CC79 /* TodoTaskState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskState.swift; sourceTree = "<group>"; };
 		E1DA6B9E27E442780051CC79 /* TodoTaskAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskAction.swift; sourceTree = "<group>"; };
@@ -107,11 +114,24 @@
 		E1DA6BA227E4430F0051CC79 /* TodoTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskService.swift; sourceTree = "<group>"; };
 		E1DA6BA427E443180051CC79 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		E1DA6BA727E44C150051CC79 /* TodoTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskTableViewCell.swift; sourceTree = "<group>"; };
-		E1DA6BA927E46D2F0051CC79 /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 		E1DA6BAB27E472B40051CC79 /* WelcomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderView.swift; sourceTree = "<group>"; };
 		E1DA6BAE27E485A90051CC79 /* TaskFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFormViewController.swift; sourceTree = "<group>"; };
 		E1DA6BB127E487640051CC79 /* MutateAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutateAction.swift; sourceTree = "<group>"; };
 		E1DA6BB327E4A32F0051CC79 /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
+		E1DA6BB527E4AC340051CC79 /* ApplicationCoordinator+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Navigation.swift"; sourceTree = "<group>"; };
+		E1DA6BB727E4AC630051CC79 /* ApplicationCoordinator+Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Onboarding.swift"; sourceTree = "<group>"; };
+		E1DA6BB927E4AE0A0051CC79 /* ApplicationCoordinator+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Home.swift"; sourceTree = "<group>"; };
+		E1DA6BBB27E4AE300051CC79 /* ApplicationCoordinator+TaskForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+TaskForm.swift"; sourceTree = "<group>"; };
+		E1DA6BC027E4AEA70051CC79 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E1DA6BC227E4AED80051CC79 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		E1DA6BC527E4AF720051CC79 /* SigninViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SigninViewController+Scene.swift"; sourceTree = "<group>"; };
+		E1DA6BC727E4AF9C0051CC79 /* SignupViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignupViewController+Scene.swift"; sourceTree = "<group>"; };
+		E1DA6BC927E4B0000051CC79 /* OnboardingViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingViewController+Scene.swift"; sourceTree = "<group>"; };
+		E1DA6BCB27E4B0620051CC79 /* HomeViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Scene.swift"; sourceTree = "<group>"; };
+		E1DA6BCD27E4B0BF0051CC79 /* TaskFormViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskFormViewController+Scene.swift"; sourceTree = "<group>"; };
+		E1DA6BCF27E4B3210051CC79 /* TodoTaskServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskServiceable.swift; sourceTree = "<group>"; };
+		E1DA6BD127E4B3880051CC79 /* AuthServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceable.swift; sourceTree = "<group>"; };
+		E1DA6BD327E4B3B70051CC79 /* Saveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saveable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +187,8 @@
 		E177C8BC27E340A600F35243 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
-				E1DA6BA627E44ACD0051CC79 /* Custom Components */,
 				E177C8F027E3429400F35243 /* Application Coordinator */,
+				E1DA6BA627E44ACD0051CC79 /* Custom Components */,
 				E177C90E27E365A900F35243 /* Enums */,
 				E177C90927E3659500F35243 /* Models */,
 				E177C8ED27E3426400F35243 /* Protocols */,
@@ -204,6 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				E177C8EE27E3427500F35243 /* Coordinator.swift */,
+				E1DA6BCF27E4B3210051CC79 /* TodoTaskServiceable.swift */,
+				E1DA6BD127E4B3880051CC79 /* AuthServiceable.swift */,
+				E1DA6BD327E4B3B70051CC79 /* Saveable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -212,6 +235,10 @@
 			isa = PBXGroup;
 			children = (
 				E177C8F127E342B400F35243 /* ApplicationCoordinator.swift */,
+				E1DA6BB527E4AC340051CC79 /* ApplicationCoordinator+Navigation.swift */,
+				E1DA6BB727E4AC630051CC79 /* ApplicationCoordinator+Onboarding.swift */,
+				E1DA6BB927E4AE0A0051CC79 /* ApplicationCoordinator+Home.swift */,
+				E1DA6BBB27E4AE300051CC79 /* ApplicationCoordinator+TaskForm.swift */,
 			);
 			path = "Application Coordinator";
 			sourceTree = "<group>";
@@ -219,10 +246,8 @@
 		E177C8F327E342E500F35243 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E1DA6BC427E4AEF90051CC79 /* Onboarding */,
 				E177C93127E3B81100F35243 /* Home */,
-				E177C8F727E3431500F35243 /* Signup */,
-				E177C8F627E3430200F35243 /* Signin */,
-				E177C8F427E342FC00F35243 /* OnboardingViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -231,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				E177C8F827E3432200F35243 /* SigninViewController.swift */,
+				E1DA6BC527E4AF720051CC79 /* SigninViewController+Scene.swift */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -239,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				E177C8FA27E3432A00F35243 /* SignupViewController.swift */,
+				E1DA6BC727E4AF9C0051CC79 /* SignupViewController+Scene.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -255,9 +282,9 @@
 		E177C90E27E365A900F35243 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				E177C90F27E365B200F35243 /* Category.swift */,
 				E1DA6BB127E487640051CC79 /* MutateAction.swift */,
 				E1DA6BB327E4A32F0051CC79 /* FormState.swift */,
+				E1DA6BC227E4AED80051CC79 /* Status.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -265,7 +292,6 @@
 		E177C91127E3709A00F35243 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E177C91327E370CC00F35243 /* Jsons */,
 				E177C8C627E340A800F35243 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -280,20 +306,11 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E177C91327E370CC00F35243 /* Jsons */ = {
-			isa = PBXGroup;
-			children = (
-				E177C92D27E3B5FC00F35243 /* users.json */,
-				E177C92F27E3B7C900F35243 /* tasks.json */,
-			);
-			path = Jsons;
-			sourceTree = "<group>";
-		};
 		E177C91427E372A700F35243 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				E1DA6B9B27E442650051CC79 /* Todo Task */,
 				E177C91927E3751600F35243 /* Auth */,
+				E1DA6B9B27E442650051CC79 /* Todo Task */,
 				E177C91527E372F600F35243 /* Store.swift */,
 				E177C91727E374D300F35243 /* AppState.swift */,
 				E177C92427E37B6E00F35243 /* AppAction.swift */,
@@ -328,6 +345,7 @@
 			children = (
 				E1DA6BAD27E485980051CC79 /* Task Form */,
 				E177C93227E3B81C00F35243 /* HomeViewController.swift */,
+				E1DA6BCB27E4B0620051CC79 /* HomeViewController+Scene.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -345,9 +363,9 @@
 		E1DA6BA627E44ACD0051CC79 /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
-				E1DA6BA727E44C150051CC79 /* TodoTaskTableViewCell.swift */,
-				E1DA6BA927E46D2F0051CC79 /* NeumorphicView.swift */,
-				E1DA6BAB27E472B40051CC79 /* WelcomeHeaderView.swift */,
+				E1DA6BBF27E4AE980051CC79 /* Extensions */,
+				E1DA6BBD27E4AE7F0051CC79 /* UITableViewCell */,
+				E1DA6BBE27E4AE880051CC79 /* UIView */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -356,8 +374,44 @@
 			isa = PBXGroup;
 			children = (
 				E1DA6BAE27E485A90051CC79 /* TaskFormViewController.swift */,
+				E1DA6BCD27E4B0BF0051CC79 /* TaskFormViewController+Scene.swift */,
 			);
 			path = "Task Form";
+			sourceTree = "<group>";
+		};
+		E1DA6BBD27E4AE7F0051CC79 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E1DA6BA727E44C150051CC79 /* TodoTaskTableViewCell.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		E1DA6BBE27E4AE880051CC79 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E1DA6BAB27E472B40051CC79 /* WelcomeHeaderView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		E1DA6BBF27E4AE980051CC79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1DA6BC027E4AEA70051CC79 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1DA6BC427E4AEF90051CC79 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E177C8F627E3430200F35243 /* Signin */,
+				E177C8F727E3431500F35243 /* Signup */,
+				E177C8F427E342FC00F35243 /* OnboardingViewController.swift */,
+				E1DA6BC927E4B0000051CC79 /* OnboardingViewController+Scene.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,8 +530,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E177C93027E3B7C900F35243 /* tasks.json in Resources */,
-				E177C92E27E3B5FC00F35243 /* users.json in Resources */,
 				E177C8CA27E340A800F35243 /* LaunchScreen.storyboard in Resources */,
 				E177C8C727E340A800F35243 /* Assets.xcassets in Resources */,
 			);
@@ -505,36 +557,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				E177C8F927E3432200F35243 /* SigninViewController.swift in Sources */,
+				E1DA6BC127E4AEA70051CC79 /* Color+Extension.swift in Sources */,
 				E177C92827E37D1A00F35243 /* World.swift in Sources */,
 				E1DA6BA327E4430F0051CC79 /* TodoTaskService.swift in Sources */,
 				E1DA6B9F27E442780051CC79 /* TodoTaskAction.swift in Sources */,
+				E1DA6BB827E4AC630051CC79 /* ApplicationCoordinator+Onboarding.swift in Sources */,
 				E177C92127E3756400F35243 /* AuthAction.swift in Sources */,
 				E1DA6B9D27E442700051CC79 /* TodoTaskState.swift in Sources */,
-				E177C91027E365B200F35243 /* Category.swift in Sources */,
-				E1DA6BAA27E46D2F0051CC79 /* NeumorphicView.swift in Sources */,
+				E1DA6BCA27E4B0000051CC79 /* OnboardingViewController+Scene.swift in Sources */,
 				E1DA6BAF27E485A90051CC79 /* TaskFormViewController.swift in Sources */,
 				E1DA6BB227E487640051CC79 /* MutateAction.swift in Sources */,
 				E177C8EF27E3427500F35243 /* Coordinator.swift in Sources */,
+				E1DA6BCC27E4B0620051CC79 /* HomeViewController+Scene.swift in Sources */,
+				E1DA6BD027E4B3210051CC79 /* TodoTaskServiceable.swift in Sources */,
 				E177C91827E374D300F35243 /* AppState.swift in Sources */,
+				E1DA6BC827E4AF9C0051CC79 /* SignupViewController+Scene.swift in Sources */,
+				E1DA6BD427E4B3B70051CC79 /* Saveable.swift in Sources */,
 				E177C92C27E3AF9700F35243 /* AuthService.swift in Sources */,
 				E177C8FB27E3432A00F35243 /* SignupViewController.swift in Sources */,
 				E177C92327E3756B00F35243 /* AuthReducer.swift in Sources */,
 				E177C8F527E342FC00F35243 /* OnboardingViewController.swift in Sources */,
+				E1DA6BC327E4AED80051CC79 /* Status.swift in Sources */,
+				E1DA6BCE27E4B0BF0051CC79 /* TaskFormViewController+Scene.swift in Sources */,
 				E177C90B27E3659C00F35243 /* User.swift in Sources */,
 				E1DA6BA827E44C150051CC79 /* TodoTaskTableViewCell.swift in Sources */,
 				E1DA6BA127E442840051CC79 /* TodoTaskReducer.swift in Sources */,
 				E177C92527E37B6E00F35243 /* AppAction.swift in Sources */,
 				E177C91627E372F600F35243 /* Store.swift in Sources */,
+				E1DA6BC627E4AF720051CC79 /* SigninViewController+Scene.swift in Sources */,
+				E1DA6BB627E4AC340051CC79 /* ApplicationCoordinator+Navigation.swift in Sources */,
 				E177C92A27E39D1100F35243 /* AppReducer.swift in Sources */,
 				E177C8BE27E340A600F35243 /* AppDelegate.swift in Sources */,
 				E1DA6BA527E443180051CC79 /* FileLoader.swift in Sources */,
 				E177C93327E3B81C00F35243 /* HomeViewController.swift in Sources */,
+				E1DA6BD227E4B3880051CC79 /* AuthServiceable.swift in Sources */,
+				E1DA6BBC27E4AE300051CC79 /* ApplicationCoordinator+TaskForm.swift in Sources */,
 				E177C8F227E342B400F35243 /* ApplicationCoordinator.swift in Sources */,
 				E177C91F27E3755C00F35243 /* AuthState.swift in Sources */,
 				E177C90D27E365A200F35243 /* Task.swift in Sources */,
 				E1DA6BAC27E472B40051CC79 /* WelcomeHeaderView.swift in Sources */,
 				E1DA6BB427E4A32F0051CC79 /* FormState.swift in Sources */,
 				E177C8C027E340A600F35243 /* SceneDelegate.swift in Sources */,
+				E1DA6BBA27E4AE0A0051CC79 /* ApplicationCoordinator+Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
