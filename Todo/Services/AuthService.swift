@@ -11,6 +11,7 @@ struct AuthService: AuthServiceable, Saveable {
     enum AuthError: Swift.Error {
         case noUserFound(email: String)
         case existing(email: String)
+        case invalidCredentials
 
         var message: String {
             switch (self) {
@@ -18,6 +19,8 @@ struct AuthService: AuthServiceable, Saveable {
                 return "Email address: \(email) already exist."
             case .noUserFound(let email):
                 return "User with email address of \(email) is not found."
+            case .invalidCredentials:
+                return "Invalid credentials."
             }
         }
     }
@@ -25,6 +28,7 @@ struct AuthService: AuthServiceable, Saveable {
     func signIn(email: String, password: String) throws -> User? {
         let users: [User] = try! FileLoader().loadFile(type: User.self, fromFileNamed: "users")
         guard let user = users.first(where: { $0.email == email }) else { throw AuthError.noUserFound(email: email) }
+        guard user.password == password else { throw AuthError.invalidCredentials }
 
         return user
     }
