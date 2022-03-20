@@ -9,13 +9,11 @@ import UIKit
 
 extension HomeViewController {
     func setupScene() {
-        view.backgroundColor = .offWhite
         setupTableView()
         setupEmptyNoteLabel()
     }
 
     private func setupTableView() {
-        tableView.backgroundColor = .offWhite
         tableView.register(TodoTaskTableViewCell.self, forCellReuseIdentifier: "TodoTaskTableViewCell")
         tableView.separatorInset = .zero
         tableView.separatorStyle = .none

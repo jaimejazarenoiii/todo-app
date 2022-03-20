@@ -69,7 +69,7 @@ class TodoTaskTableViewCell: UITableViewCell {
     }
 
     private func setupContainerView() {
-        containerView.backgroundColor = .white
+        containerView.backgroundColor = traitCollection.userInterfaceStyle == .dark ? .white : .offWhite
         containerView.layer.cornerRadius = 20.0
         containerView.layer.shadowColor = UIColor.gray.cgColor
         containerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
@@ -86,6 +86,7 @@ class TodoTaskTableViewCell: UITableViewCell {
 
     private func setupTitleLabel() {
         titleLabel.font = .boldSystemFont(ofSize: 24)
+        titleLabel.textColor = .black
 
         containerView.addSubview(titleLabel)
 
@@ -97,6 +98,7 @@ class TodoTaskTableViewCell: UITableViewCell {
 
     private func setupDescriptionLabel() {
         descriptionLabel.font = .boldSystemFont(ofSize: 14)
+        descriptionLabel.textColor = .black
 
         containerView.addSubview(descriptionLabel)
 

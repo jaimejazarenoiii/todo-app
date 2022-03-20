@@ -9,7 +9,7 @@ import UIKit
 
 extension TaskFormViewController {
     func setupScene() {
-        view.backgroundColor = .offWhite
+        view.backgroundColor = traitCollection.userInterfaceStyle == .dark ? .black : .white
         setupTitleTextField()
         setupDescriptionTextField()
     }

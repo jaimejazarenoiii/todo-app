@@ -20,7 +20,6 @@ class SigninViewController: UIViewController, StoreSubscriber {
 
     override func loadView() {
         super.loadView()
-        view.backgroundColor = .white
         setupScene()
     }
 

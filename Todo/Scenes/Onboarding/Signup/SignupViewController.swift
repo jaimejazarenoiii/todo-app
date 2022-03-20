@@ -22,7 +22,6 @@ class SignupViewController: UIViewController, StoreSubscriber {
 
     override func loadView() {
         super.loadView()
-        view.backgroundColor = .white
         setupScene()
     }
 

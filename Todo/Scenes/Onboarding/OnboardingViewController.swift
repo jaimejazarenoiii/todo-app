@@ -26,7 +26,6 @@ class OnboardingViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        view.backgroundColor = .white
         setupScene()
     }
 

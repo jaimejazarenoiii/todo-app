@@ -46,7 +46,6 @@ class HomeViewController: UIViewController, StoreSubscriber {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         setupBindings()
     }
 
