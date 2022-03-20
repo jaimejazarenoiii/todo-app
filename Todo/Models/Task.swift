@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TodoTask: Codable {
+struct TodoTask: Codable, Equatable {
     var id: Int = 0
     var title: String
     var description: String
