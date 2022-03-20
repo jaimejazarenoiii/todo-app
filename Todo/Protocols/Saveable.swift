@@ -9,11 +9,11 @@ import Foundation
 
 protocol Saveable {}
 extension Saveable {
-    func saveToJson<T: Codable>(type: T.Type, objects: [T]) {
+    func saveToJson<T: Codable>(type: T.Type, objects: [T], fileName: String) {
         let jsonEncoder = JSONEncoder()
         let jsonData = try! jsonEncoder.encode(objects)
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            .first!.appendingPathComponent("tasks.json")
+            .first!.appendingPathComponent("\(fileName).json")
 
         do {
             try String(data: jsonData, encoding: .utf8)!

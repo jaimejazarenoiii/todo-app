@@ -42,7 +42,7 @@ struct AuthService: AuthServiceable, Saveable {
 
         users.append(newUser)
 
-        saveToJson(type: User.self, objects: users)
+        saveToJson(type: User.self, objects: users, fileName: "users")
 
         return newUser
     }

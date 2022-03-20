@@ -25,7 +25,7 @@ struct TodoTaskSerice: TodoTaskServiceable, Saveable {
 
         tasks.append(newTask)
 
-        saveToJson(type: TodoTask.self, objects: tasks)
+        saveToJson(type: TodoTask.self, objects: tasks, fileName: "tasks")
 
         return tasks.filter { $0.userId == currentUser.id }
     }
@@ -35,7 +35,7 @@ struct TodoTaskSerice: TodoTaskServiceable, Saveable {
         var tasks = try! FileLoader().loadFile(type: TodoTask.self, fromFileNamed: "tasks")
         tasks.removeAll(where: { $0.id == task.id })
 
-        saveToJson(type: TodoTask.self, objects: tasks)
+        saveToJson(type: TodoTask.self, objects: tasks, fileName: "tasks")
 
         return tasks.filter { $0.userId == currentUser.id }
     }
@@ -46,7 +46,7 @@ struct TodoTaskSerice: TodoTaskServiceable, Saveable {
         guard let oldTask = tasks.enumerated().first(where: { $0.element.id == task.id }) else { return tasks }
         tasks[oldTask.offset] = task
 
-        saveToJson(type: TodoTask.self, objects: tasks)
+        saveToJson(type: TodoTask.self, objects: tasks, fileName: "tasks")
 
         return tasks.filter { $0.userId == currentUser.id }
     }
