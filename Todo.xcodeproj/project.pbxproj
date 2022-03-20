@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E14F5B9027E6E5EF00250F00 /* AuthMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14F5B8F27E6E5EF00250F00 /* AuthMockService.swift */; };
+		E14F5B9327E6E75A00250F00 /* TodoTaskMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14F5B9227E6E75A00250F00 /* TodoTaskMockService.swift */; };
+		E14F5B9527E6E90F00250F00 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14F5B9427E6E90F00250F00 /* AuthServiceTests.swift */; };
+		E14F5B9727E6E91E00250F00 /* TodoTaskServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14F5B9627E6E91E00250F00 /* TodoTaskServiceTests.swift */; };
 		E177C8BE27E340A600F35243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C8BD27E340A600F35243 /* AppDelegate.swift */; };
 		E177C8C027E340A600F35243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E177C8BF27E340A600F35243 /* SceneDelegate.swift */; };
 		E177C8C727E340A800F35243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E177C8C627E340A800F35243 /* Assets.xcassets */; };
@@ -80,6 +84,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E14F5B8F27E6E5EF00250F00 /* AuthMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockService.swift; sourceTree = "<group>"; };
+		E14F5B9227E6E75A00250F00 /* TodoTaskMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskMockService.swift; sourceTree = "<group>"; };
+		E14F5B9427E6E90F00250F00 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
+		E14F5B9627E6E91E00250F00 /* TodoTaskServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskServiceTests.swift; sourceTree = "<group>"; };
 		E177C8BA27E340A600F35243 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E177C8BD27E340A600F35243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E177C8BF27E340A600F35243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +172,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E14F5B9127E6E74400250F00 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E14F5B8F27E6E5EF00250F00 /* AuthMockService.swift */,
+				E14F5B9227E6E75A00250F00 /* TodoTaskMockService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		E177C8B127E340A500F35243 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				E177C8D427E340A800F35243 /* TodoTests.swift */,
+				E14F5B9427E6E90F00250F00 /* AuthServiceTests.swift */,
+				E14F5B9627E6E91E00250F00 /* TodoTaskServiceTests.swift */,
 			);
 			path = TodoTests;
 			sourceTree = "<group>";
@@ -332,6 +351,7 @@
 		E177C92627E37CFE00F35243 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E14F5B9127E6E74400250F00 /* Mocks */,
 				E177C92727E37D1A00F35243 /* World.swift */,
 				E177C92B27E3AF9700F35243 /* AuthService.swift */,
 				E1DA6BA227E4430F0051CC79 /* TodoTaskService.swift */,
@@ -566,6 +586,7 @@
 				E1DA6B9D27E442700051CC79 /* TodoTaskState.swift in Sources */,
 				E1DA6BCA27E4B0000051CC79 /* OnboardingViewController+Scene.swift in Sources */,
 				E1DA6BAF27E485A90051CC79 /* TaskFormViewController.swift in Sources */,
+				E14F5B9327E6E75A00250F00 /* TodoTaskMockService.swift in Sources */,
 				E1DA6BB227E487640051CC79 /* MutateAction.swift in Sources */,
 				E177C8EF27E3427500F35243 /* Coordinator.swift in Sources */,
 				E1DA6BCC27E4B0620051CC79 /* HomeViewController+Scene.swift in Sources */,
@@ -597,6 +618,7 @@
 				E177C90D27E365A200F35243 /* Task.swift in Sources */,
 				E1DA6BAC27E472B40051CC79 /* WelcomeHeaderView.swift in Sources */,
 				E1DA6BB427E4A32F0051CC79 /* FormState.swift in Sources */,
+				E14F5B9027E6E5EF00250F00 /* AuthMockService.swift in Sources */,
 				E177C8C027E340A600F35243 /* SceneDelegate.swift in Sources */,
 				E1DA6BBA27E4AE0A0051CC79 /* ApplicationCoordinator+Home.swift in Sources */,
 			);
@@ -607,6 +629,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E177C8D527E340A800F35243 /* TodoTests.swift in Sources */,
+				E14F5B9527E6E90F00250F00 /* AuthServiceTests.swift in Sources */,
+				E14F5B9727E6E91E00250F00 /* TodoTaskServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

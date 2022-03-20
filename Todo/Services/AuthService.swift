@@ -8,7 +8,7 @@
 import Foundation
 
 struct AuthService: AuthServiceable, Saveable {
-    enum AuthError: Swift.Error {
+    enum AuthError: Swift.Error, Equatable {
         case noUserFound(email: String)
         case existing(email: String)
         case invalidCredentials
